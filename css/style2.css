@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* IMAGEM DE FUNDO */
+body{
+    height:100vh;
+    background-image: url("../img/fundo2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* MENU */
+
+header{
+    width:100%;
+    padding:20px;
+    background: rgba(0,0,0,0.6);
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:40px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+}
+
+.cardapio{
+padding:40px;
+}
+
+/* titulo */
+
+.titulo{
+text-align:left;
+margin-bottom:30px;
+font-size:35px;
+}
+
+/* lista */
+
+.lista-comidas{
+display:flex;
+flex-direction:column;
+gap:20px;
+width:400px;
+}
+
+/* card */
+
+.card{
+display:flex;
+align-items:center;
+gap:20px;
+background:black;
+color:white;
+padding:10px;
+border-radius:10px;
+}
+
+/* imagem */
+
+.card img{
+width:120px;
+height:80px;
+object-fit:cover;
+border-radius:5px;
+}
+
+/* legenda */
+
+.card p{
+font-size:18px;
+}
