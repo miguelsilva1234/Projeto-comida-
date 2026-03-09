@@ -1,3 +1,5 @@
+/* RESET */
+
 *{
     margin:0;
     padding:0;
@@ -5,80 +7,98 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* IMAGEM DE FUNDO */
+/* FUNDO */
+
+html, body{
+    height:100%;
+}
+
 body{
-    height:100vh;
+    min-height:100vh;
     background-image: url("../img/fundo2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-/* MENU */
+/* HEADER / MENU */
 
 header{
     width:100%;
     padding:20px;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.7);
 }
 
 .menu{
     display:flex;
     justify-content:center;
-    list-style:none;
     gap:40px;
+    list-style:none;
 }
 
 .menu a{
     text-decoration:none;
     color:white;
     font-size:18px;
+    transition:0.3s;
 }
+
+.menu a:hover{
+    color:#ffb347;
+}
+
+/* SEÇÃO CARDÁPIO */
 
 .cardapio{
-padding:40px;
+    padding:40px;
+    margin-left:120px; /* joga tudo um pouco pra direita */
 }
 
-/* titulo */
+/* TITULO */
 
 .titulo{
-text-align:left;
-margin-bottom:30px;
-font-size:35px;
+    font-size:40px;
+    color:#CE2B37;
+    border-left:5px solid #006400;
+    padding-left:12px;
+    margin-bottom:30px;
 }
 
-/* lista */
+/* LISTA DE COMIDAS */
 
 .lista-comidas{
-display:flex;
-flex-direction:column;
-gap:20px;
-width:400px;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    width:650px;
 }
 
-/* card */
+/* CARD */
 
 .card{
-display:flex;
-align-items:center;
-gap:20px;
-background:black;
-color:white;
-padding:10px;
-border-radius:10px;
+    display:flex;
+    align-items:center;
+    gap:25px;
+    background:#006400;
+    color:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* imagem */
+/* IMAGEM */
 
 .card img{
-width:120px;
-height:80px;
-object-fit:cover;
-border-radius:5px;
+    width:200px; /* imagem um pouco maior */
+    height:150px;
+    object-fit:cover;
+    border-radius:10px;
 }
 
-/* legenda */
+/* TEXTO */
 
 .card p{
-font-size:18px;
+    font-size:22px;
+    line-height:1.4;
 }
